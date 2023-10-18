@@ -1,324 +1,485 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Paladiwal's</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="assets/css/styles.css">
-    </head>
-    <body>
-        <!-- 1. Header Start -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">Navbar</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Dropdown link
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
-                    </li>
-                </ul>
-                </div>
-            </div>
-        </nav>
-        <!-- 1. Header End -->
-
-        <!-- 2.Carousel. Start -->
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            </div>
-            <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                <img src="assets/images/carousel1.webp" class="d-block w-100" alt="...">
-                <div class="carousel-caption  d-md-block text-end">
-                    <h5>Best Seller</h5>
-                    <h3>Chocolate Cake</h3>
-                    <h4>Style Destination</h4>
-                    <button type="button" class="btn btn-dark">Shop Now</button>
-                </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                <img src="../../assets/images/carousel2.webp" class="d-block w-100" alt="...">
-                <div class="carousel-caption d-md-block">
-                    <h5>Best Seller</h5>
-                    <h3>Fruit Chocolate</h3>
-                    <h4>Style Destination</h4>
-                    <button type="button" class="btn btn-dark">Shop Now</button>
-                </div>
-                </div>
-                
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
-                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
-                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                <span class="visually-hidden">Next</span>
-            </button>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+  </head>
+  <body>
+    <!-- 1. Header Start -->
+    <nav class="navbar navbar-expand-lg navbar-white bg-white fixed-top mb-5">
+      <div class="container">
+        <a class="navbar-brand" href="#">Paladiwala's</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse " id="navbarNavDropdown">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#best_seller">Best Seller</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">New Arrival</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blogs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+          </ul>
         </div>
-        <!-- 2. Carousel. End -->
-        <main class="container">
-            <!-- 3. Grid Start -->
-                <section class="mt-6 mb-6">
-                    <div class="row">
-                        <div class="col-12 col-md-6 mt-4">
-                            <img src="assets/images/grid1.webp" class="d-block w-100" alt="">
-                        </div>
-                        <div class="col-12 col-md-6 mt-4">
-                            <div class="row">
-                                <div class=" col-12 col-md-12">
-                                    <img src="assets/images/grid2.webp" class="d-block w-100"alt="">
-                                </div>
-                                <div class="col-12 mt-4 col-md-12">
-                                    <img src="assets/images/grid3.webp" class="d-block w-100" alt="">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </section>
-                <!-- 3. Grid End -->
-                <!-- 4. Best Seller Start -->
-                <section class="">
-                    <div class="text-center mt-5 mb-4">
-                        <h3>BEST SELLER</h3>
-                        <div class="heading-line"></div>
-                        <h5 class="text-muted mt-4">Best Seller Product This Week!</h5>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-md-3 mt-4 relative">
-                            <img src="assets/images/seller1.webp" class="d-block w-100" alt="">
-                            <h6>White Chocolate</h6>
-                            <h6 class="text-muted">$20</h6>
-                        </div>
-                        <div class="col-6 col-md-3 mt-4">
-                            <img src="assets/images/seller2.webp" class="d-block w-100"alt="">
-                            <h6>Strawberry Chocolate Ice Cream</h6>
-                            <h6 class="text-muted">$20</h6>
-                        </div>
-                        <div class="col-6 col-md-3 mt-4">
-                            <img src="assets/images/seller3.webp" class="d-block w-100" alt="">
-                            <h6>Strawberry chocolate</h6>
-                            <h6 class="text-muted">$20</h6>
-                        </div>
-                        <div class="col-6 col-md-3 mt-4">
-                            <img src="assets/images/seller4.webp" class="d-block w-100" alt="">
-                            <h6>Round Chocolate</h6>
-                            <h6 class="text-muted">$20</h6>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-6 col-md-3 mt-4">
-                            <img src="assets/images/seller5.webp" class="d-block w-100" alt="">
-                            <h6>Peanut butter chocolate</h6>
-                            <h6 class="text-muted">$20</h6>
-                        </div>
-                        <div class="col-6 col-md-3 mt-4">
-                            <img src="assets/images/seller6.webp" class="d-block w-100"alt="">
-                            <h6>Milk Chocolate Raisins</h6>
-                            <h6 class="text-muted">$20</h6>
-                        </div>
-                        <div class="col-6 col-md-3 mt-4">
-                            <img src="assets/images/seller7.webp" class="d-block w-100" alt="">
-                            <h6>Milk Chocolate</h6>
-                            <h6 class="text-muted">$20</h6>
-                        </div>
-                        <div class="col-6 col-md-3 mt-4">
-                            <img src="assets/images/seller8.webp" class="d-block w-100" alt="">
-                            <h6>Hard Chocolate</h6>
-                            <h6 class="text-muted">$20</h6>
-                        </div>
-                    </div>
-                </section>
-                <!-- 4. Best Seller End -->
+      </div>
+    </nav>
+    <!-- 1. Header End -->
+    <main class="container mt70">
+      <!-- 2.Carousel. Start -->
+      <div id="carouselExampleDark" class="carousel carousel-dark slide mt-5">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleDark"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img
+              src="assets/images/carousel1.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block text-end">
+              <h5>Best Seller</h5>
+              <h3>Chocolate Cake</h3>
+              <h4>Style Destination</h4>
+              <button type="button" class="btn btn-dark">Shop Now</button>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img
+              src="../../assets/images/carousel2.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+            <div class="carousel-caption d-md-block">
+              <h5>Best Seller</h5>
+              <h3>Fruit Chocolate</h3>
+              <h4>Style Destination</h4>
+              <button type="button" class="btn btn-dark">Shop Now</button>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="prev"
+        >
+          <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleDark"
+          data-bs-slide="next"
+        >
+          <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <!-- 2. Carousel. End -->
 
-                <!-- 5. Chocolate collection Start -->
-                <!-- 5. Chocolate Collection End -->
+      <!-- 3. Grid Start -->
+      <section class="mt-6 mb-6">
+        <div class="row">
+          <div class="col-12 col-md-6 mt-4">
+            <img src="assets/images/grid1.webp" class="d-block w-100" alt="" />
+          </div>
+          <div class="col-12 col-md-6 mt-4">
+            <div class="row">
+              <div class="col-12 col-md-12">
+                <img
+                  src="assets/images/grid2.webp"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+              <div class="col-12 mt-4 col-md-12">
+                <img
+                  src="assets/images/grid3.webp"
+                  class="d-block w-100"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 3. Grid End -->
+      <!-- 4. Best Seller Start -->
+      <section id="best_seller" class="mt70">
+        <div class="text-center mt-5 mb-4 ">
+          <h3>BEST SELLER</h3>
+          <div class="heading-line"></div>
+          <h5 class="text-muted mt-4">Best Seller Product This Week!</h5>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-3 mt-4 relative">
+            <img
+              src="assets/images/seller1.webp"
+              class="d-block w-100"
+              alt=""
+            />
+            <h6>White Chocolate</h6>
+            <h6 class="text-muted">$20</h6>
+          </div>
+          <div class="col-6 col-md-3 mt-4">
+            <img
+              src="assets/images/seller2.webp"
+              class="d-block w-100"
+              alt=""
+            />
+            <h6>Strawberry Chocolate Ice Cream</h6>
+            <h6 class="text-muted">$20</h6>
+          </div>
+          <div class="col-6 col-md-3 mt-4">
+            <img
+              src="assets/images/seller3.webp"
+              class="d-block w-100"
+              alt=""
+            />
+            <h6>Strawberry chocolate</h6>
+            <h6 class="text-muted">$20</h6>
+          </div>
+          <div class="col-6 col-md-3 mt-4">
+            <img
+              src="assets/images/seller4.webp"
+              class="d-block w-100"
+              alt=""
+            />
+            <h6>Round Chocolate</h6>
+            <h6 class="text-muted">$20</h6>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-6 col-md-3 mt-4">
+            <img
+              src="assets/images/seller5.webp"
+              class="d-block w-100"
+              alt=""
+            />
+            <h6>Peanut butter chocolate</h6>
+            <h6 class="text-muted">$20</h6>
+          </div>
+          <div class="col-6 col-md-3 mt-4">
+            <img
+              src="assets/images/seller6.webp"
+              class="d-block w-100"
+              alt=""
+            />
+            <h6>Milk Chocolate Raisins</h6>
+            <h6 class="text-muted">$20</h6>
+          </div>
+          <div class="col-6 col-md-3 mt-4">
+            <img
+              src="assets/images/seller7.webp"
+              class="d-block w-100"
+              alt=""
+            />
+            <h6>Milk Chocolate</h6>
+            <h6 class="text-muted">$20</h6>
+          </div>
+          <div class="col-6 col-md-3 mt-4">
+            <img
+              src="assets/images/seller8.webp"
+              class="d-block w-100"
+              alt=""
+            />
+            <h6>Hard Chocolate</h6>
+            <h6 class="text-muted">$20</h6>
+          </div>
+        </div>
+      </section>
+      <!-- 4. Best Seller End -->
 
-                <!-- 6. New Arrival start -->
-                <section class="">
-                    <div class="text-center mt-5 mb-5">
-                        <h3>New Arrival</h3>
-                        <div class="heading-line text-center"></div>
-                    </div>
-                    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                        <div class=" carousel-inner">
+      <!-- 5. Chocolate collection Start -->
+      <!-- 5. Chocolate Collection End -->
 
-                            <div class="carousel-item active " data-bs-interval="2000">
-                                <div class="row d-md-inline-flex">
-                                    <div class="col-6 col-md-3">
-                                        <img src="assets/images/seller1.webp" class="d-block w-100" alt="...">
-                                        <h6>White Chocolate</h6>
-                                        <h6 class="text-muted">$20</h6>
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                        <img src="assets/images/seller2.webp" class="d-block w-100" alt="...">
-                                        <h6>Strawberry Ice Cream</h6>
-                                        <h6 class="text-muted">$20</h6>
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                        <img src="assets/images/seller3.webp" class="d-block w-100" alt="...">
-                                        <h6>Strawberry chocolate</h6>
-                                        <h6 class="text-muted">$20</h6>
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                        <img src="assets/images/seller4.webp" class="d-block w-100" alt="...">
-                                        <h6>Round Chocolate</h6>
-                                        <h6 class="text-muted">$20</h6>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-6 carousel-item " data-bs-interval="2000">
-                                <div class="row d-md-inline-flex">
-                                    <div class="col-6 col-md-3">
-                                        <img src="assets/images/seller5.webp" class="d-block w-100" alt="...">
-                                        <h6>Peanut chocolate</h6>
-                                        <h6 class="text-muted">$20</h6>
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                        <img src="assets/images/seller6.webp" class="d-block w-100" alt="...">
-                                        <h6>Milk Chocolate Raisins</h6>
-                                        <h6 class="text-muted">$20</h6>
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                        <img src="assets/images/seller7.webp" class="d-block w-100" alt="...">
-                                        <h6>Milk Chocolate</h6>
-                                        <h6 class="text-muted">$20</h6>
-                                    </div>
-                                    <div class="col-6 col-md-3">
-                                        <img src="assets/images/seller8.webp" class="d-block w-100" alt="...">
-                                        <h6>Hard Chocolate</h6>
-                                        <h6 class="text-muted">$20</h6>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </section>
-                <!-- 6. New Arrival End -->
-
-                <!-- 7. Our Blogs Start -->
-                <section class="">
-                    <div class="col-12 col-md-12 text-center mt-5 mb-5">
-                        <h3>Our Blogs</h3>
-                        <div class="heading-line"></div>
-                    </div>
-
-                    <div class="row d-none d-md-inline-flex">
-                        <div class="col-md-4">
-                            <img src="assets/images/blog1.webp" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/blog2.webp" class="d-block w-100" alt="...">
-                        </div>
-                        <div class="col-md-4">
-                            <img src="assets/images/blog3.webp" class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-
-                    <div id="carouselExampleIntervalBlog" class="carousel slide d-md-none" data-bs-ride="carousel">
-                        <div class=" carousel-inner">
-                            <div class="carousel-item active " data-bs-interval="10000">
-                                <img src="assets/images/blog1.webp" class="d-block w-100" alt="...">
-                                <!-- <h6>White Chocolate</h6> -->
-                            </div>
-                            <div class="carousel-item " data-bs-interval="2000">
-                                <img src="assets/images/blog2.webp" class="d-block w-100" alt="...">
-                            </div>
-                            <div class="carousel-item ">
-                                <img src="assets/images/blog3.webp" class="d-block w-100" alt="...">
-                            </div>
-                        </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIntervalBlog" data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Previous</span>
-                        </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIntervalBlog" data-bs-slide="next">
-                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                            <span class="visually-hidden">Next</span>
-                        </button>
-                    </div>
-                </section>
-                <!-- 7. Our Blogs End -->
-
-        
-    </main>
-        
-        <!-- 8. Footer Start -->
-            <footer>
-                <div class="container mt-5 mb-5">
-                    <div class="row text-center">
-                        <div class="col-12 col-md-4">
-                            <img src="assets/images/logo.webp" class="w-10" alt="">
-                            <p>Sophisticated simplicity for the</p>
-                            <ul class=" list-inline ">
-                                <li class="d-inline-block me-2"><i class="fa fa-twitter"></i></li>
-                                <li class="d-inline-block me-2"><i class="fa fa-dribbble"></i></li>
-                                <li class="d-inline-block me-2"><i class="fa fa-behance"></i></li>
-                                <li class="d-inline-block me-2"><i class="fa fa-instagram"></i></li>
-                            </ul>
-                        </div>
-                        <div  class="col-12 col-md-4">
-                            <h5>Help & Information</h5>
-                            <div class="footer-line text-center"></div>
-                            <ul class="list-inline">
-                                <li>Pagination</li>
-                                <li>Terms & Conditions</li>
-                                <li>Contact</li>
-                                <li>Accessories</li>
-                                <li>Term of use</li>
-                            </ul>
-                        </div>
-                        <div class="col-12 col-md-4">
-                            <h5>About Us</h5>
-                            <div class="footer-line text-center"></div>
-                            <ul class="list-inline">
-                                <li>Help Center</li>
-                                <li>Address Store</li>
-                                <li>Privacy Policy</li>
-                                <li>Receivers & Amplifiers</li>
-                                <li>Term of use</li>
-                            </ul>
-                        </div>
-                    </div>
+      <!-- 6. New Arrival start -->
+      <section class="">
+        <div class="text-center mt-5 mb-5">
+          <h3>New Arrival</h3>
+          <div class="heading-line text-center"></div>
+        </div>
+        <div
+          id="carouselExampleInterval"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="2000">
+              <div class="row d-md-inline-flex">
+                <div class="col-6 col-md-3">
+                  <img
+                    src="assets/images/seller1.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <h6>White Chocolate</h6>
+                  <h6 class="text-muted">$20</h6>
                 </div>
-            </footer>
-        <!-- 8. Footer End -->
+                <div class="col-6 col-md-3">
+                  <img
+                    src="assets/images/seller2.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <h6>Strawberry Ice Cream</h6>
+                  <h6 class="text-muted">$20</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                  <img
+                    src="assets/images/seller3.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <h6>Strawberry chocolate</h6>
+                  <h6 class="text-muted">$20</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                  <img
+                    src="assets/images/seller4.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <h6>Round Chocolate</h6>
+                  <h6 class="text-muted">$20</h6>
+                </div>
+              </div>
+            </div>
 
-        <!-- SCRIPTS START -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
-    </body>
+            <div class="col-6 carousel-item" data-bs-interval="2000">
+              <div class="row d-md-inline-flex">
+                <div class="col-6 col-md-3">
+                  <img
+                    src="assets/images/seller5.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <h6>Peanut chocolate</h6>
+                  <h6 class="text-muted">$20</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                  <img
+                    src="assets/images/seller6.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <h6>Milk Chocolate Raisins</h6>
+                  <h6 class="text-muted">$20</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                  <img
+                    src="assets/images/seller7.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <h6>Milk Chocolate</h6>
+                  <h6 class="text-muted">$20</h6>
+                </div>
+                <div class="col-6 col-md-3">
+                  <img
+                    src="assets/images/seller8.webp"
+                    class="d-block w-100"
+                    alt="..."
+                  />
+                  <h6>Hard Chocolate</h6>
+                  <h6 class="text-muted">$20</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleInterval"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- 6. New Arrival End -->
+
+      <!-- 7. Our Blogs Start -->
+      <section class="">
+        <div class="col-12 col-md-12 text-center mt-5 mb-5">
+          <h3>Our Blogs</h3>
+          <div class="heading-line"></div>
+        </div>
+
+        <div class="row d-none d-md-inline-flex">
+          <div class="col-md-4">
+            <img
+              src="assets/images/blog1.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/images/blog2.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="col-md-4">
+            <img
+              src="assets/images/blog3.webp"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+        </div>
+
+        <div
+          id="carouselExampleIntervalBlog"
+          class="carousel slide d-md-none"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="10000">
+              <img
+                src="assets/images/blog1.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+              <!-- <h6>White Chocolate</h6> -->
+            </div>
+            <div class="carousel-item" data-bs-interval="2000">
+              <img
+                src="assets/images/blog2.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+            <div class="carousel-item">
+              <img
+                src="assets/images/blog3.webp"
+                class="d-block w-100"
+                alt="..."
+              />
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleIntervalBlog"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleIntervalBlog"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </section>
+      <!-- 7. Our Blogs End -->
+    </main>
+
+    <!-- 8. Footer Start -->
+    <footer>
+      <div class="container mt-5 mb-5">
+        <div class="row text-center">
+          <div class="col-12 col-md-4">
+            <img src="assets/images/logo.webp" class="w-10" alt="" />
+            <p>Sophisticated simplicity for the</p>
+            <ul class="list-inline">
+              <li class="d-inline-block me-2"><i class="fa fa-twitter"></i></li>
+              <li class="d-inline-block me-2">
+                <i class="fa fa-dribbble"></i>
+              </li>
+              <li class="d-inline-block me-2"><i class="fa fa-behance"></i></li>
+              <li class="d-inline-block me-2">
+                <i class="fa fa-instagram"></i>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h5>Help & Information</h5>
+            <div class="footer-line text-center"></div>
+            <ul class="list-inline">
+              <li>Pagination</li>
+              <li>Terms & Conditions</li>
+              <li>Contact</li>
+              <li>Accessories</li>
+              <li>Term of use</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h5>About Us</h5>
+            <div class="footer-line text-center"></div>
+            <ul class="list-inline">
+              <li>Help Center</li>
+              <li>Address Store</li>
+              <li>Privacy Policy</li>
+              <li>Receivers & Amplifiers</li>
+              <li>Term of use</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- 8. Footer End -->
+
+    <!-- SCRIPTS START -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
